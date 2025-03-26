@@ -365,9 +365,7 @@ monaco.editor.defineTheme('myDarkTheme', {
 
 
 editor = monaco.editor.create(document.getElementById("container"), {
-    value: `-- made by @danlacho with 💖 | RezWare V3.3 
-
--- https://discord.gg/y5fbcRQhxz | Dont forgot join discord`,
+    value: `-- print("RezWare on Top")`,
     language: 'lua',
     theme: 'myDarkTheme', // Default initial theme
     smoothScrolling: true,
@@ -477,8 +475,10 @@ editor.onMouseDown(function (event) {
     }
 });
 
+
 // Simple URL validation
 function isValidUrl(string) {
     const res = string.match(/^(http|https):\/\/[^ "]+$/);
     return res !== null;
 }
+
